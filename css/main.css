@@ -1,0 +1,113 @@
+@charset "utf-8";
+html {
+    -ms-touch-action: none;
+}
+body,
+div,
+h1,
+h3,
+h4,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+img {
+    display: block;
+    border:none;
+}
+body {
+	width: 100%;
+    *cursor: default;
+	overflow: hidden;
+	font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
+}
+canvas{
+	display: block;
+}
+#pageContain {
+	overflow: hidden;
+	display: none;
+}
+.page {
+    box-shadow: 1px 1px 4px 0 #000;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.contain {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: relative;
+	z-index: 0;
+    padding-top: 70px;
+}
+.current .contain,.slide .contain {
+	display: block;
+}
+.current {
+	display: block;
+	z-index: 1;
+}
+.slide {
+	display: block;
+	z-index: 2;
+}
+.swipe {
+    display: block;
+    z-index: 3;
+    transition-duration: 0ms !important;
+    -webkit-transition-duration: 0ms !important;
+}
+.page1 {
+	background: #29948f;
+	color: white;
+}
+.page1 h1{
+	position: relative;
+	width: 50px;
+	animation: movedown 5s ease-in-out 0s  both;
+	-webkit-animation: movedown 5s ease-in-out 0s  both;
+	
+
+}
+.page2 {
+	background: #2f2f2f;
+}
+.page3 {
+	background: #fff;
+}
+.page4 {
+	background: #3c8847;
+}
+
+@keyframes movedown{
+	0%{
+		left: 50px;
+	}
+	100%{
+		left: 200px;
+	}
+}
+@-webkit-keyframes movedown{
+	0%{
+		left: 50px;
+	}
+	100%{
+		left: 200px;
+	}
+}
