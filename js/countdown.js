@@ -46,13 +46,20 @@ window.onload = function(){
 }
 
 function bodyChange(){
-	var emb = document.createElement('embed');
-	emb.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	emb.setAttribute('display','none');
-	emb.setAttribute('autostart','true');
-	emb.setAttribute('loop','true');
-	emb.setAttribute('allowNetworking', 'all')
-	canvas.parentNode.appendChild(emb);
+	// var emb = document.createElement('embed');
+	// emb.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
+	// emb.setAttribute('display','none');
+	// emb.setAttribute('autostart','true');
+	// emb.setAttribute('loop','true');
+	// emb.setAttribute('allowNetworking', 'all')
+	// canvas.parentNode.appendChild(emb);
+	var iframe = document.createElement('iframe');
+	iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
+	iframe.setAttribute('display','none');
+	iframe.setAttribute('autostart','true');
+	iframe.setAttribute('loop','true');
+	iframe.setAttribute('allowNetworking', 'all')
+	canvas.parentNode.appendChild(iframe);
 	canvas.parentNode.removeChild(canvas);
 	var runPage = new FullPage({
 		id : 'pageContain',
