@@ -4,7 +4,7 @@ var RADIUS = 8;
 var MARGIN_TOP = 60;
 var MARGIN_LEFT = 30;
 
-const endTime = new Date(2015,8,19,17,04,20);
+const endTime = new Date(2015,8,20,20,43,00);
 
 var curShowTimeSeconds = 0;
 var balls = [];
@@ -46,12 +46,12 @@ window.onload = function(){
 }
 
 function bodyChange(){
-	var emb = document.createElement('embed');
-	emb.setAttribute('src', 'ttp://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	emb.setAttribute('display','none');
-	emb.setAttribute('autostart','false');
-	emb.setAttribute('loop','true');
-	emb.setAttribute('allowNetworking', 'all');
+	// var emb = document.createElement('embed');
+	// emb.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
+	// emb.setAttribute('display','none');
+	// emb.setAttribute('autostart','false');
+	// emb.setAttribute('loop','true');
+	// emb.setAttribute('allowNetworking', 'all');
 	// canvas.parentNode.appendChild(emb);
 
 	// var iframe = document.createElement('iframe');
@@ -61,14 +61,13 @@ function bodyChange(){
 	// iframe.setAttribute('loop','true');
 	// iframe.setAttribute('allowNetworking', 'all');
 
-	// var audi = document.createElement('audio');
-	// audi.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	// audi.setAttribute('display','none');
-	// audi.setAttribute('autoplay','autoplay');
-	// audi.setAttribute('loop','true');
-	// audi.setAttribute('allowNetworking', 'all');
+	var audi = document.createElement('audio');
+	audi.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
+	audi.setAttribute('display','none');
+	audi.setAttribute('autoplay','autoplay');
+	audi.setAttribute('loop','loop');
 
-	canvas.parentNode.appendChild(emb);
+	canvas.parentNode.appendChild(audi);
 	canvas.parentNode.removeChild(canvas);
 	var runPage = new FullPage({
 		id : 'pageContain',
