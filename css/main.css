@@ -31,7 +31,7 @@ body {
 	overflow: hidden;
 	font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
 }
-canvas{
+#canvas{
 	display: block;
 }
 #pageContain {
@@ -175,15 +175,20 @@ canvas{
 	}
 }
 
+/*page1 ended page2 begins*/
+
 .page2 {
-	background: #2f2f2f;
+	background: #08A1EF;
 }
 .page3 {
-	background: #fff;
-}
-.page4 {
-	background: #3c8847;
+	background: #F6BB43;
 }
 
+/*div.btnbg {
+    position:fixed;
+    left:0;
+    top:0;
+}
+*/
 
 
