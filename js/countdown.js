@@ -4,7 +4,7 @@ var RADIUS = 8;
 var MARGIN_TOP = 60;
 var MARGIN_LEFT = 30;
 
-const endTime = new Date(2015,8,19,14,09,20);
+const endTime = new Date(2015,8,19,17,04,20);
 
 var curShowTimeSeconds = 0;
 var balls = [];
@@ -46,20 +46,29 @@ window.onload = function(){
 }
 
 function bodyChange(){
-	// var emb = document.createElement('embed');
-	// emb.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	// emb.setAttribute('display','none');
-	// emb.setAttribute('autostart','true');
-	// emb.setAttribute('loop','true');
-	// emb.setAttribute('allowNetworking', 'all')
+	var emb = document.createElement('embed');
+	emb.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
+	emb.setAttribute('display','none');
+	emb.setAttribute('autostart','false');
+	emb.setAttribute('loop','true');
+	emb.setAttribute('allowNetworking', 'all');
 	// canvas.parentNode.appendChild(emb);
-	var iframe = document.createElement('iframe');
-	iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	iframe.setAttribute('display','none');
-	iframe.setAttribute('autostart','true');
-	iframe.setAttribute('loop','true');
-	iframe.setAttribute('allowNetworking', 'all')
-	canvas.parentNode.appendChild(iframe);
+
+	// var iframe = document.createElement('iframe');
+	// iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
+	// iframe.setAttribute('display','none');
+	// iframe.setAttribute('autostart','true');
+	// iframe.setAttribute('loop','true');
+	// iframe.setAttribute('allowNetworking', 'all');
+
+	// var audi = document.createElement('audio');
+	// audi.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
+	// audi.setAttribute('display','none');
+	// audi.setAttribute('autoplay','autoplay');
+	// audi.setAttribute('loop','true');
+	// audi.setAttribute('allowNetworking', 'all');
+
+	canvas.parentNode.appendChild(emb);
 	canvas.parentNode.removeChild(canvas);
 	var runPage = new FullPage({
 		id : 'pageContain',
