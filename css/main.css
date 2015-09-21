@@ -179,13 +179,14 @@ body {
 /*page1 ended page2 begins*/
 
 .page2 {
-	background: #08A1EF;
+	background:#2196F3;
 	/*color: #D23F0B;*/
-	color: #ffcc33;
+	color: #ffff00;
 }
 
 .suncon{
 	position: relative;
+	z-index: 10;
 	-webkit-animation: moveRight 1s linear 0s;
 	animation: moveRight 1s linear 0s;
 }
@@ -210,8 +211,8 @@ body {
 	position: relative;
 	width: 120px;
 	height: 120px;
-	-webkit-animation: rotate 1.5s linear 1s infinite;
-	animation: rotate 1.5s linear 1s infinite;
+	-webkit-animation: rotate 3s linear 1s infinite;
+	animation: rotate 3s linear 1s infinite;
 }
 @-webkit-keyframes rotate {
   from {
@@ -233,6 +234,50 @@ body {
   	transform: rotate(360deg);
   }
 }
+.cloud0{
+	position: absolute;
+	height: 65px;
+	top: 10%;
+	left: 17%;
+	-webkit-animation: cloudMove 7s linear 2s infinite;
+	animation: cloudMove 7s linear 2s infinite;
+}
+.cloud1{
+	position: absolute;
+	height: 55px;
+	top: 8%;
+	left: 40%;
+	-webkit-animation: cloudMove 7s linear 5s infinite;
+	animation: cloudMove 7s linear 5s infinite;
+}
+.cloud2{
+	position: absolute;
+	height: 58px;
+	top: 12%;
+	left: 80%;
+}
+@-webkit-keyframes cloudMove {
+  from {
+  	-webkit-transform:translateX(0px);
+  	transform: translateX(0px);
+  	opacity: 1;
+  }
+  to {
+  	-webkit-transform:translateX(30px);
+  	transform: translateX(30px);
+  	opacity: 0;
+  }
+}
+@keyframes rotate {
+  from {
+  	-webkit-transform:rotate(0deg);
+  	transform: rotate(0deg);
+  }
+  to {
+  	-webkit-transform:rotate(360deg);
+  	transform: rotate(360deg);
+  }
+}
 
 .page2 > .contain p{
 	font-size: 1.4rem;
@@ -240,162 +285,184 @@ body {
 	line-height: 2.4rem;
 }
 
-.mushcon{
-	position: absolute;
-	display: inline-block;
-	margin-left: 1rem;
-	animation: moveRight 4s ease-in 0s;
-	-webkit-animation: moveRight 4s ease-in 0s;
-}
-
-.mush{
-	width: 110px;
-}
 
 .topLine{
-	margin-left: 47%;
+	text-align: center;
 }
 
 .line1{
-	margin-top: 40px;
-	animation: lineMovel 4.5s ease-in 0s;
-	-webkit-animation: lineMovel 4.5s ease-in 0s;
+	margin-top: 5%;
+	animation: lineMovel 2.5s ease-in 0s;
+	-webkit-animation: lineMovel 2.5s ease-in 0s;
 }
 @keyframes lineMovel{
   0%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   80%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
 }
 @-webkit-keyframes lineMovel{
   0%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   80%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
 }
 
 .line2{
-	animation: lineMovell 5.5s ease-in 0s;
-	-webkit-animation: lineMovell 5.5s ease-in 0s;
+	animation: lineMovell 3.5s ease-in 0s;
+	-webkit-animation: lineMovell 3.5s ease-in 0s;
 }
 @keyframes lineMovell{
   0%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   80%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
 }
 @-webkit-keyframes lineMovell{
   0%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   80%{
   	-webkit-transform: translateX(100%);
   	transform: translateX(100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
 }
 
 .botLine{
-	margin-left: 1rem;
+	/*margin-left: 1rem;*/
+	text-align: center;
 }
 
 .line3{
-	margin-top: 50px;
-	animation: lineMover 6s ease-in 0s;
-	-webkit-animation: lineMover 6s ease-in 0s;
+	/*margin-top: 50px;*/
+	animation: lineMover 4s ease-in 0s;
+	-webkit-animation: lineMover 4s ease-in 0s;
 }
 @keyframes lineMover{
   0%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   70%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
 }
 @-webkit-keyframes lineMover{
   0%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   70%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
 }
 
 .line4{
-	animation: lineMoverr 7s ease-in 0s;
-	-webkit-animation: lineMoverr 7s ease-in 0s;
+	animation: lineMoverr 5s ease-in 0s;
+	-webkit-animation: lineMoverr 5s ease-in 0s;
 }
 @keyframes lineMoverr{
   0%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   70%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
 }
 @-webkit-keyframes lineMoverr{
   0%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   70%{
   	-webkit-transform: translateX(-100%);
   	transform: translateX(-100%);
+  	opacity: 0;
   }
   100%{
   	-webkit-transform: translateX(0px);
   	transform: translateX(0px);
+  	opacity: 1;
   }
+}
+.tree{
+	position: absolute;
+	right: 20%;
+	bottom: 0%;
+	width: 170px;
+	z-index: -10;
 }
 
 .mousecon{
 	position: absolute;
+	/*height: 100px;*/
 	right: 0;
 	bottom: 0;
 	animation: moveLeft 2s ease-in 0s;
@@ -431,6 +498,7 @@ body {
 }
 
 .mouse{
+	height: 100px;
 	-webkit-animation: shake 0.5s linear 2s infinite alternate;
 	animation: shake 0.5s linear 2s infinite alternate;
 }
@@ -498,7 +566,7 @@ body {
 .mouse2{
 	position: absolute;
 	display: inline-block;
-	height: 110px;
+	height: 100px;
 	left: 0;
 	bottom: 0;
 	-webkit-animation: jump .3s linear 0s infinite alternate;
@@ -507,7 +575,7 @@ body {
 .mouse3{
 	position: absolute;
 	display: inline-block;
-	height: 110px;
+	height: 100px;
 	right: 0;
 	bottom: 0;
 	-webkit-animation: jump .3s linear .15s infinite alternate;

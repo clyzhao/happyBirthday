@@ -4,7 +4,7 @@ var RADIUS = 8;
 var MARGIN_TOP = 60;
 var MARGIN_LEFT = 30;
 
-const endTime = new Date(2015,8,21,15,10,00);
+const endTime = new Date(2015,8,21,19,13,00);
 
 var curShowTimeSeconds = 0;
 var balls = [];
@@ -54,20 +54,21 @@ function bodyChange(){
 	// emb.setAttribute('allowNetworking', 'all');
 	// canvas.parentNode.appendChild(emb);
 
-	// var iframe = document.createElement('iframe');
-	// iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	// iframe.setAttribute('display','none');
-	// iframe.setAttribute('autostart','true');
-	// iframe.setAttribute('loop','true');
-	// iframe.setAttribute('allowNetworking', 'all');
+	var iframe = document.createElement('iframe');
+	iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
+	iframe.setAttribute('display','none');
+	iframe.setAttribute('autostart','true');
+	iframe.setAttribute('loop','true');
+	iframe.setAttribute('allowNetworking', 'all');
 
-	var audi = document.createElement('audio');
-	audi.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	audi.setAttribute('display','none');
-	audi.setAttribute('autoplay','autoplay');
-	audi.setAttribute('loop','loop');
+	// var audi = document.createElement('audio');
+	// audi.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
+	// audi.setAttribute('display','none');
+	// audi.setAttribute('autoplay','autoplay');
+	// audi.setAttribute('preload', 'preload');
+	// audi.setAttribute('loop','loop');
 
-	canvas.parentNode.appendChild(audi);
+	canvas.parentNode.appendChild(iframe);
 	canvas.parentNode.removeChild(canvas);
 	var runPage = new FullPage({
 		id : 'pageContain',
@@ -208,8 +209,8 @@ function render(cxt){
 }
 
 function renderDigit(x, y, num, cxt){
-	cxt.fillStyle = "rgb(0, 102, 153)";
-
+	// cxt.fillStyle = "rgb(0, 102, 153)";
+ 	cxt.fillStyle = 'rgb(0, 102, 255)';
 	for(var i=0,row=digit[num].length; i<row; i++){
 		for(var j=0,col=digit[num][i].length; j<col; j++){
 			if(digit[num][i][j] == 1){
