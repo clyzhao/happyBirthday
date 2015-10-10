@@ -54,12 +54,12 @@ function bodyChange(){
 	// emb.setAttribute('allowNetworking', 'all');
 	// canvas.parentNode.appendChild(emb);
 
-	var iframe = document.createElement('iframe');
-	iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
-	iframe.setAttribute('display','none');
-	iframe.setAttribute('autostart','true');
-	iframe.setAttribute('loop','true');
-	iframe.setAttribute('allowNetworking', 'all');
+	// var iframe = document.createElement('iframe');
+	// iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
+	// iframe.setAttribute('display','none');
+	// iframe.setAttribute('autostart','true');
+	// iframe.setAttribute('loop','true');
+	// iframe.setAttribute('allowNetworking', 'all');
 
 	// var audi = document.createElement('audio');
 	// audi.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
@@ -68,7 +68,7 @@ function bodyChange(){
 	// audi.setAttribute('preload', 'preload');
 	// audi.setAttribute('loop','loop');
 
-	canvas.parentNode.appendChild(iframe);
+	//canvas.parentNode.appendChild(iframe);
 	canvas.parentNode.removeChild(canvas);
 	var runPage = new FullPage({
 		id : 'pageContain',
