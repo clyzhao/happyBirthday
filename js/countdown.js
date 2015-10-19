@@ -46,13 +46,13 @@ window.onload = function(){
 }
 
 function bodyChange(){
-	// var emb = document.createElement('embed');
-	// emb.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=28949444&type=2&auto=1&width=320&height=66');
-	// emb.setAttribute('display','none');
-	// emb.setAttribute('autostart','false');
-	// emb.setAttribute('loop','true');
-	// emb.setAttribute('allowNetworking', 'all');
-	// canvas.parentNode.appendChild(emb);
+	var emb = document.createElement('embed');
+	emb.setAttribute('src', 'http://music.163.com/outchain/player?type=2&id=3413895&auto=1&height=66');
+	emb.setAttribute('display','none');
+	emb.setAttribute('autostart','false');
+	emb.setAttribute('loop','true');
+	emb.setAttribute('allowNetworking', 'all');
+	canvas.parentNode.appendChild(emb);
 
 	// var iframe = document.createElement('iframe');
 	// iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
@@ -68,7 +68,7 @@ function bodyChange(){
 	// audi.setAttribute('preload', 'preload');
 	// audi.setAttribute('loop','loop');
 
-	//canvas.parentNode.appendChild(iframe);
+	canvas.parentNode.appendChild(emb);
 	canvas.parentNode.removeChild(canvas);
 	var runPage = new FullPage({
 		id : 'pageContain',
