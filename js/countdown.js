@@ -52,7 +52,7 @@ function bodyChange(){
 	emb.setAttribute('autostart','false');
 	emb.setAttribute('loop','true');
 	emb.setAttribute('allowNetworking', 'all');
-	canvas.parentNode.appendChild(emb);
+	
 
 	// var iframe = document.createElement('iframe');
 	// iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
