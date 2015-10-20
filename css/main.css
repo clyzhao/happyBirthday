@@ -428,12 +428,11 @@ body {
 /*page4 ended page5 begins*/
 
 .page5{
-  background: #EC87C1;
-  background: #ED4933;
+  background: #FF6666;
 }
 
 .page5 > p{
-  color: #ffffff;
+  color: #FFFF00;
   position: absolute;
   width: 250px;
   height: 30px;
