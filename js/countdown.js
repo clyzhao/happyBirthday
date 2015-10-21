@@ -52,21 +52,6 @@ function bodyChange(){
 	emb.setAttribute('autostart','false');
 	emb.setAttribute('loop','true');
 	emb.setAttribute('allowNetworking', 'all');
-	
-
-	// var iframe = document.createElement('iframe');
-	// iframe.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
-	// iframe.setAttribute('display','none');
-	// iframe.setAttribute('autostart','true');
-	// iframe.setAttribute('loop','true');
-	// iframe.setAttribute('allowNetworking', 'all');
-
-	// var audi = document.createElement('audio');
-	// audi.setAttribute('src', 'http://music.163.com/style/swf/widget.swf?sid=34586075&type=2&auto=1&width=320&height=66');
-	// audi.setAttribute('display','none');
-	// audi.setAttribute('autoplay','autoplay');
-	// audi.setAttribute('preload', 'preload');
-	// audi.setAttribute('loop','loop');
 
 	canvas.parentNode.appendChild(emb);
 	canvas.parentNode.removeChild(canvas);
@@ -92,18 +77,14 @@ function getCurrentShowTimeSeconds(){
 	var curTime = new Date();
 	var ret = endTime.getTime() - curTime.getTime();
 	ret = Math.round(ret/1000);
-
 	return ret >= 0 ? ret : 0;
-
 }
 
 function update(){
 	var nextShowTimeSeconds = getCurrentShowTimeSeconds();
-
 	var nextHours = parseInt(nextShowTimeSeconds / 3600);
 	var nextMinutes = parseInt((nextShowTimeSeconds - nextHours*3600)/60);
 	var nextSeconds = nextShowTimeSeconds % 60;
-
 	var curHours = parseInt(curShowTimeSeconds/3600);
 	var curMinutes = parseInt((curShowTimeSeconds - curHours*3600)/60);
 	var curSeconds = curShowTimeSeconds % 60;
@@ -209,7 +190,6 @@ function render(cxt){
 }
 
 function renderDigit(x, y, num, cxt){
-	// cxt.fillStyle = "rgb(0, 102, 153)";
  	cxt.fillStyle = 'rgb(0, 102, 255)';
 	for(var i=0,row=digit[num].length; i<row; i++){
 		for(var j=0,col=digit[num][i].length; j<col; j++){
