@@ -231,14 +231,14 @@ body {
 
 .line3{
 	margin-left: 40%;
-	animation: show 4s ease-in 0s;
-	-webkit-animation: show 4s ease-in 0s;
+	animation: show 3s ease-in 0s;
+	-webkit-animation: show 3s ease-in 0s;
 }
 
 .line4{
   margin-left: 27%;
-	animation: show 5s ease-in 0s;
-	-webkit-animation: show 5s ease-in 0s;
+	animation: show 4s ease-in 0s;
+	-webkit-animation: show 4s ease-in 0s;
 }
 
 .page2cake{

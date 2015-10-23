@@ -4,7 +4,7 @@ var RADIUS = 8;
 var MARGIN_TOP = 60;
 var MARGIN_LEFT = 30;
 
-const endTime = new Date(2015,9,20,18,40,00);
+const endTime = new Date(2015,9,23,13,45,00);
 
 var curShowTimeSeconds = 0;
 var balls = [];
